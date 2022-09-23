@@ -7,7 +7,7 @@ import { About } from "./MyComponents/About";
 import React, { useState, useEffect } from 'react';
 import {
   BrowserRouter as Router,
-  Routes,
+  Switch,
   Route
 } from "react-router-dom";
 
@@ -61,7 +61,7 @@ function App() {
     <> 
     <Router>
       <Header title="My Todos List" searchBar={false} /> 
-      <Routes>
+      <Switch>
           <Route path="/" render={()=>{
             return(
             <>
@@ -73,7 +73,7 @@ function App() {
           <Route path="/about">
             <About />
           </Route> 
-        </Routes> 
+        </Switch> 
       <Footer />
     </Router>
     </>
