@@ -1,7 +1,7 @@
 import React from 'react'
 import {TodoItem} from "./TodoItem";
 
-export const Todos = (props) => {
+const Todos = (props) => {
     let myStyle = {
         minHeight: "70vh",
         margin: "40px auto"
@@ -19,3 +19,5 @@ export const Todos = (props) => {
         </div>
     )
 }
+
+export default Todos;
