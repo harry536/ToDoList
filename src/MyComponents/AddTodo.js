@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export const AddTodo = ({ addTodo }) => {
+const AddTodo = ({ addTodo }) => {
     const [title, setTitle] = useState("");
     const [desc, setDesc] = useState("");
 
@@ -34,3 +34,4 @@ export const AddTodo = ({ addTodo }) => {
         </div>
     )
 }
+export default AddTodo;
